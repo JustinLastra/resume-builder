@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">Resume Builder</div>
+    <div class="actions">
+      <button id="importBtn">Import</button>
+      <button id="tailorBtn">Tailor</button>
+      <button id="printBtn">Print / Download</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <nav class="sidebar">
+      <div class="sidebar-controls">
+        <button id="addSectionBtn">+ Add Section</button>
+      </div>
+      <ul id="sectionsList" class="sections-list"></ul>
+      <div class="templates">
+        <h4>Template</h4>
+        <div class="template-name">Clean Single Column (default)</div>
+      </div>
+    </nav>
+
+    <section class="editor">
+      <div id="editorContent" class="editor-content"></div>
+    </section>
+
+    <aside class="assistant">
+      <h3>Assistant 🤖</h3>
+      <div id="assistantOutput" class="assistant-output">Ask for help rewriting bullets, tailoring summaries, or improving phrasing.</div>
+      <textarea id="assistantPrompt" rows="3" placeholder="Ask: e.g., "Rewrite my summary for a Product Manager role""></textarea>
+      <div class="assistant-actions">
+        <button id="askBtn">Ask</button>
+      </div>
+
+      <hr />
+
+      <h4>Import / Tailor</h4>
+      <label for="importResume">Paste resume (text)</label>
+      <textarea id="importResume" rows="6" placeholder="Paste your resume text here"></textarea>
+      <label for="importJob">Paste job description</label>
+      <textarea id="importJob" rows="6" placeholder="Paste job description here"></textarea>
+      <div class="assistant-actions">
+        <button id="parseBtn">Parse & Suggest</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">Tip: Use the Assistant to tailor bullets for a job description. (Mocked responses in this teaching build.)</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
