@@ -66,10 +66,51 @@ body {
   background-color: antiquewhite;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-sidebar_list-item:hover {
   background-color: #d7ccc8;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  border-bottom: 2px solid #65887d;
+  padding-bottom: 5px;
+}
+
+.section-content {
+  min-height: 50px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+}
+
+.section-content:focus {
+  border-color: #65887d;
+  background-color: #fafafa;
+}
+
+.delete-btn {
+  background-color: #8794a1;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.delete-btn:hover {
+  background-color: red;
 }
 
 /* Print */
